@@ -1,9 +1,9 @@
 {
-  "name": "react-component-boilerplate",
-  "description": "Boilerplate for React.js components",
-  "author": "Juho Vepsalainen",
-  "user": "survivejs",
-  "version": "3.0.0",
+  "name": "rui-component",
+  "description": "React UI Container component",
+  "author": "Bård N. Hovde",
+  "user": "bnhovde",
+  "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest",
@@ -72,11 +72,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/survivejs/react-component-boilerplate.git"
+    "url": "https://github.com/bnhovde/rui-component.git"
   },
-  "homepage": "https://survivejs.github.io/react-component-boilerplate/",
+  "homepage": "https://bnhovde.github.io/rui-component/",
   "bugs": {
-    "url": "https://github.com/survivejs/react-component-boilerplate/issues"
+    "url": "https://github.com/bnhovde/rui-component/issues"
   },
   "jest": {
     "collectCoverage": true,
