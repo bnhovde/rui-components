@@ -42,3 +42,6 @@ var b = 10;
 console.log(a + b);
 ```
 
+## Credits
+npm boilerplate used: [https://github.com/survivejs/react-component-boilerplate](https://github.com/survivejs/react-component-boilerplate)
+
