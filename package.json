@@ -1,6 +1,6 @@
 {
-  "name": "rui-component",
-  "description": "React UI Container component",
+  "name": "rui-components",
+  "description": "Simple React UI components",
   "author": "Bård N. Hovde",
   "user": "bnhovde",
   "version": "1.0.0",
@@ -72,11 +72,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnhovde/rui-component.git"
+    "url": "https://github.com/bnhovde/rui-components.git"
   },
-  "homepage": "https://bnhovde.github.io/rui-component/",
+  "homepage": "https://bnhovde.github.io/rui-components/",
   "bugs": {
-    "url": "https://github.com/bnhovde/rui-component/issues"
+    "url": "https://github.com/bnhovde/rui-components/issues"
   },
   "jest": {
     "collectCoverage": true,

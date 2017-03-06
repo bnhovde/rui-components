@@ -18,6 +18,12 @@ const pages = [
     path: '/',
     title: 'Introduction',
     component: require('../README.md')
+  },
+  {
+    path: '/examples',
+    title: 'Examples',
+    imports: { Container: require('../src/Container/Container') },
+    component: require('../src/Container/Container.docs.md')
   }
 ];
 
