@@ -20,10 +20,21 @@ const pages = [
     component: require('../README.md')
   },
   {
-    path: '/examples',
-    title: 'Examples',
-    imports: { Container: require('../src/Container/Container') },
-    component: require('../src/Container/Container.docs.md')
+    title: 'Components',
+    pages: [
+      {
+        path: '/components/container',
+        title: 'Container',
+        imports: { Container: require('../src/components/Container/Container') },
+        component: require('../src/components/Container/Container.docs.md')
+      },
+      {
+        path: '/components/grid',
+        title: 'Grid',
+        imports: { Grid: require('../src/components/Grid/Grid') },
+        component: require('../src/components/Grid/Grid.docs.md')
+      }
+    ]
   }
 ];
 
