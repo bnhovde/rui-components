@@ -1,4 +1,4 @@
-[![build status](https://secure.travis-ci.org/survivejs/react-component-boilerplate.svg)](http://travis-ci.org/survivejs/react-component-boilerplate) [![bitHound Score](https://www.bithound.io/github/survivejs/react-component-boilerplate/badges/score.svg)](https://www.bithound.io/github/survivejs/react-component-boilerplate) [![Dependency Status](https://david-dm.org/survivejs/react-component-boilerplate.svg)](https://david-dm.org/survivejs/react-component-boilerplate)
+[![build status](https://secure.travis-ci.org/bnhovde/rui-component.svg)](http://travis-ci.org/bnhovde/rui-component) [![bitHound Score](https://www.bithound.io/github/bnhovde/rui-component/badges/score.svg)](https://www.bithound.io/github/bnhovde/rui-component) [![Dependency Status](https://david-dm.org/bnhovde/rui-component.svg)](https://david-dm.org/bnhovde/rui-component)
 
 # React UI Container component
 
