@@ -56,14 +56,25 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 	
-	// this should be the entry point to your library
-	var Container = __webpack_require__(1);
-	var Grid = __webpack_require__(85);
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 	
-	module.exports = {};
+	var _Container = __webpack_require__(1);
 	
-	exports.Container = Container;
-	exports.Grid = Grid;
+	var _Container2 = _interopRequireDefault(_Container);
+	
+	var _Grid = __webpack_require__(85);
+	
+	var _Grid2 = _interopRequireDefault(_Grid);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// Entry point to your library
+	exports.default = {
+	  Container: _Container2.default,
+	  Grid: _Grid2.default
+	};
 
 /***/ },
 /* 1 */

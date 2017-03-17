@@ -1,8 +1,8 @@
-// this should be the entry point to your library
-var Container = require('./components/Container/index.js');
-var Grid = require('./components/Grid/index.js');
+// Entry point to your library
+import Container from './components/Container';
+import Grid from './components/Grid';
 
-module.exports = {};
-
-exports.Container = Container;
-exports.Grid = Grid;
+export default {
+  Container,
+  Grid,
+};
