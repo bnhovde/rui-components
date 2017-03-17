@@ -3,3 +3,12 @@
 }
 
 /* TODO: insert main styles of your demo here */
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  background: rgba(255, 64, 0, 0.14);
+}

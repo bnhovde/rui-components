@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import GithubCorner from 'react-github-corner';
 import { Catalog, CodeSpecimen, ReactSpecimen } from 'catalog';
 
+import 'sanitize.css/sanitize.css';
 import 'purecss/build/pure.css';
 import './main.css';
 import '../style.css';
@@ -17,7 +18,7 @@ const pages = [
   {
     path: '/',
     title: 'Introduction',
-    component: require('../README.md')
+    component: require('../README.md'),
   },
   {
     title: 'Components',
@@ -26,16 +27,16 @@ const pages = [
         path: '/components/container',
         title: 'Container',
         imports: { Container: require('../src/components/Container/Container') },
-        component: require('../src/components/Container/Container.docs.md')
+        component: require('../src/components/Container/Container.docs.md'),
       },
       {
         path: '/components/grid',
         title: 'Grid',
         imports: { Grid: require('../src/components/Grid/Grid') },
-        component: require('../src/components/Grid/Grid.docs.md')
-      }
-    ]
-  }
+        component: require('../src/components/Grid/Grid.docs.md'),
+      },
+    ],
+  },
 ];
 
 // Catalog - logoSrc="../images/logo.png"
@@ -55,10 +56,10 @@ ReactDOM.render(
       specimens={{
         javascript: props => <CodeSpecimen {...props} lang="javascript" />,
         js: props => <CodeSpecimen {...props} lang="javascript" />,
-        jsx: props => <ReactSpecimen {...props} />
+        jsx: props => <ReactSpecimen {...props} />,
       }}
       title={title}
     />
   </div>,
-  document.getElementById('app')
+  document.getElementById('app'),
 );

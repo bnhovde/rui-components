@@ -97,5 +97,9 @@
   "license": "MIT",
   "pre-push": [
     "test"
-  ]
+  ],
+  "dependencies": {
+    "sanitize.css": "^5.0.0",
+    "styled-components": "^1.4.4"
+  }
 }
