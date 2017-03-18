@@ -12,9 +12,9 @@
 */
 
 import React, { PropTypes } from 'react';
-import { Aligner } from '../../primitives/Aligner';
-import { Padder } from '../../primitives/Padder';
-import { WidthLimiter } from '../../primitives/WidthLimiter';
+import { Aligner } from '../../primitives/Aligner.js';
+import { Padder } from '../../primitives/Padder.js';
+import { WidthLimiter } from '../../primitives/WidthLimiter.js';
 
 function Container(props) {
   const {
