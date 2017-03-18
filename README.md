@@ -2,7 +2,7 @@
 
 # Simple React UI components
 
-test
+### NB: Not yet functional
 
 ## Basic Usage
 
