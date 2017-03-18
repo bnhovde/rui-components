@@ -1,3 +1,7 @@
 // Entry point to your library
-export Container from './components/Container';
-export Grid from './components/Grid';
+import _Container from './components/Container';
+import _Grid from './components/Grid';
+
+export { _Container as Container };
+export { _Grid as Grid };
+
