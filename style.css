@@ -1,20 +1,3 @@
-/* TODO: insert default styles of your component here for easy access */
-
-.highlight {
-  background: #ffd6d6;
-}
-
-.highlight-wrapper {
-  background: #ffa1a1;
-}
-
-.flexBox {
-  display: flex;
-}
-.flexBox > * {
-  flex: 1;
-}
-
 /* Styling resets */
 
 p,
@@ -26,4 +9,33 @@ ul,
 li {
   margin: 0;
   padding: 0;
+}
+
+/* Demo helpers */
+
+.highlight {
+  background: #ffd6d6;
+}
+
+.highlight-margins {
+  display: inline-block;
+  width: 100%;
+  background: #f9cc9d;
+}
+
+.highlight-padding {
+  background: #c4d08b;
+}
+
+.highlight-element {
+  background: #8cb6c1;
+}
+
+/* Layout helpers */
+
+.flexBox {
+  display: flex;
+}
+.flexBox > * {
+  flex: 1;
 }
