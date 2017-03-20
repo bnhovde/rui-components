@@ -1,5 +1,8 @@
 export default {
-  gutter: 1,
+  gutter: {
+    fluid: 5, // %
+    fixed: 1, // rem
+  },
   breakpoints: {
     elder: 1470,
     adult: 1170,

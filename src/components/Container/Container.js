@@ -13,28 +13,27 @@
 
 import React, { PropTypes } from 'react';
 import { Aligner } from '../../primitives/Aligner.js';
-import { Padder } from '../../primitives/Padder.js';
+import { Spacer } from '../../primitives/Spacer.js';
 import { WidthLimiter } from '../../primitives/WidthLimiter.js';
 
 function Container(props) {
   const {
     children,
-    padding = [],
     limited = false,
     align = false,
-    full = false,
     autocenter = false,
   } = props;
 
-  return (
-    <WidthLimiter limited={limited} autocenter={autocenter} className="Container">
-      <Aligner align={align}>
-        <Padder padding={padding} full={full}>
-          {children}
-        </Padder>
-      </Aligner>
-    </WidthLimiter>
-  );
+  const renderWidthLimiter = limited || autocenter;
+  const renderAligner = align;
+
+  const componentsToRender =
+    [Spacer, renderWidthLimiter && WidthLimiter, renderAligner && Aligner]
+      .filter(c => c !== false);
+
+  // Conditionally return only required components
+  return componentsToRender
+    .reduce((result, Component) => <Component {...props}>{result}</Component>, children);
 }
 
 Container.propTypes = {
@@ -42,12 +41,8 @@ Container.propTypes = {
     React.PropTypes.element,
     PropTypes.arrayOf(React.PropTypes.element),
   ]),
-  padding: React.PropTypes.arrayOf(React.PropTypes.shape({
-    top: React.PropTypes.string,
-    right: React.PropTypes.string,
-    bottom: React.PropTypes.string,
-    left: React.PropTypes.string,
-  })),
+  margin: React.PropTypes.arrayOf(React.PropTypes.string),
+  padding: React.PropTypes.arrayOf(React.PropTypes.string),
   limited: PropTypes.string,
   align: PropTypes.string,
   autocenter: PropTypes.bool,

@@ -1,1 +1,16 @@
 /* TODO: insert default styles of your component here for easy access */
+
+.highlight {
+  background: #ffd6d6;
+}
+
+.highlight-wrapper {
+  background: #ffa1a1;
+}
+
+.flexBox {
+  display: flex;
+}
+.flexBox > * {
+  flex: 1;
+}

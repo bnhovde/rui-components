@@ -8,7 +8,6 @@ const {
 const Wrapper = styled.div`
   padding-left: ${gutter}rem;
   padding-right: ${gutter}rem;
-  background: papayawhip;
 `;
 
 export {
