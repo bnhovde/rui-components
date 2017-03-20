@@ -1,8 +1,15 @@
 # Container component
 
-The Container component adds padding to wrapped components, use this everywhere you need padding instead of adding padding to elements (where you can).
+The Container component is a generic utility component to be used for the following:
+- Adding global margin/padding to wrapped components/elements
+- Adding global max-width to wrapped components/elements
+- Adding alignment to wrapped components/elements
 
-- All containers will have left/right padding by default unless 'full' is used.
+Use this everywhere you need padding instead of adding padding to elements (where you can).
+
+NB: All containers will have left/right padding by default unless 'full' is used.
+
+## Example
 
 ```react
 plain: true
@@ -25,6 +32,14 @@ plain: true
 ---
 <Container full>
   <p className="highlight">This container is full, so it has no margins</p>
+</Container>
+```
+
+```react
+plain: true
+---
+<Container margin={['left-fluid', 'right-fluid']}>
+  <p className="highlight">This container has fluid left/right margins</p>
 </Container>
 ```
 
@@ -86,17 +101,34 @@ plain: true
 </Container>
 ```
 
-#### Layout examples
+#### Use cases
+
+Here's an example of composing other components using the container component.
+-> Notice how none of the other elements used have any margin/padding
 
 ```react
 plain: true
 ---
 <div>
   <Container margin={['top', 'bottom']}>
-    <p className="highlight">These containers shows vertical margins collapsing</p>
+    <h1 className="highlight">Component title</h1>
   </Container>
   <Container margin={['top', 'bottom']}>
-    <p className="highlight">These containers shows vertical margins collapsing</p>
+    <strong className="highlight">Component subtitle</strong>
+  </Container>
+  <Container margin={['top', 'bottom']}>
+    <div className="highlight">
+      <Container full margin={['top', 'bottom']} padding={['top', 'right', 'bottom', 'left']}>
+        <p>Component contents (padded)</p>
+        <Container margin={['top', 'bottom', 'left-double']}>
+          <ul>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+          </ul>
+        </Container>
+      </Container>
+    </div>
   </Container>
 </div>
 ```
